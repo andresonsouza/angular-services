@@ -1,0 +1,7 @@
+<h1>Comments componet</h1>
+
+<ul>
+  <li *ngFor="let u of (userComment$ | async)">
+    {{ u.id }} - {{ u.name }} - {{ u.email }}
+  </li>
+</ul>
